@@ -1,4 +1,3 @@
-# desafio-qa-atlas
 # Resolução do Desafio Técnico de Quality Assurance - Atlas Governance
 
 ## Visão Geral
