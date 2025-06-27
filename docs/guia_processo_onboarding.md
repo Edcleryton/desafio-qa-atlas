@@ -3,7 +3,8 @@
 Este documento serve como um guia de processo detalhado para um usuário que não possui familiaridade com o fluxo de criação de conta no Gmail. Cada passo representa uma ação explícita a ser tomada.
 
 Funcionalidade: Registro de Novo Usuário no Gmail
-Para que um novo colaborador possa receber documentos importantes, como seu contrato de trabalho Como uma pessoa sem uma conta Google Eu quero criar uma conta de e-mail no Gmail de forma bem-sucedida
+Para que um novo colaborador possa receber documentos importantes, como seu contrato de trabalho
+Como uma pessoa sem uma conta Google Eu quero criar uma conta de e-mail no Gmail de forma bem-sucedida
 
   Cenário: Criação de uma conta pessoal do começo ao fim (versão detalhada)
     Dado que eu acesso a página de login do Google
