@@ -48,7 +48,7 @@ Uma cobertura de teste completa para este fluxo incluiria:
 * **Testes de Segurança:** Análise de vulnerabilidades nos campos de entrada e no processo de autenticação.
 * **Testes de API:** Validação direta dos serviços de backend que suportam o registro e a verificação.
 
-### Análise de Risco do Bug Reportado (GML-REG-023)
+### Análise de Risco do Bug Reportado (GML-REG-001)
 
 * **Impacto no Negócio:** Risco direto na aquisição de novos usuários, afetando metas de crescimento.
 * **Impacto na Experiência do Usuário:** Causa frustração e pode levar ao abandono do processo, impactando negativamente a imagem da marca.
