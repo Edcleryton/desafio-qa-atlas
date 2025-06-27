@@ -7,6 +7,7 @@ Para que um novo colaborador possa receber documentos importantes, como seu cont
 Como uma pessoa sem uma conta Google Eu quero criar uma conta de e-mail no Gmail de forma bem-sucedida
 
   Cenário: Criação de uma conta pessoal do começo ao fim (versão detalhada)
+
     Dado que eu acesso a página de login do Google
     Quando eu clico na opção "Criar conta" e seleciono a opção "Para mim"
     E sou direcionado para o formulário "Criar sua Conta do Google"
