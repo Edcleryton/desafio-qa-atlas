@@ -40,9 +40,29 @@ O relatório foi estruturado seguindo padrões da indústria (baseados em IEEE 8
 
 Para ir além do solicitado e demonstrar uma visão de qualidade mais abrangente, incluo uma breve análise estratégica.
 
+### Proposta de Cenários Adicionais para Cobertura de Teste
+
+Para garantir uma cobertura de teste mais abrangente da funcionalidade de registro, o "caminho feliz" seria complementado pelos seguintes casos de teste, que cobrem fluxos alternativos e cenários de falha:
+
+* **Cenário: Tentativa de registro com nome de usuário já existente**
+    * **Objetivo:** Validar se o sistema exibe uma mensagem de erro apropriada e sugere alternativas quando o `Nome de usuário` escolhido já está em uso.
+
+* **Cenário: Senhas não correspondentes no formulário**
+    * **Objetivo:** Garantir que o formulário impede o avanço e informa o usuário de forma clara se os campos "Senha" e "Confirmar" não forem idênticos.
+
+* **Cenário: Senha fora do padrão de segurança exigido**
+    * **Objetivo:** Verificar se o sistema valida os requisitos de complexidade da senha (mínimo de caracteres, combinação de letras, números e símbolos) e orienta o usuário sobre como criar uma senha forte.
+
+* **Cenário: Validação de campos obrigatórios**
+    * **Objetivo:** Assegurar que o sistema não permite o avanço caso campos essenciais, como "Nome" ou "Sobrenome", não sejam preenchidos.
+
+* **Cenário: Fluxo alternativo sem verificação por telefone**
+    * **Objetivo:** Explorar se a plataforma oferece um caminho alternativo para o usuário que, por algum motivo, não pode ou não deseja verificar a conta por telefone no momento do registro.
+
 ### Estratégia de Teste para a Funcionalidade de Registro
 
 Uma cobertura de teste completa para este fluxo incluiria:
+
 * **Testes de Compatibilidade:** Validação em diferentes navegadores (Chrome, Firefox, Safari) e dispositivos (Mobile/Desktop).
 * **Testes de Usabilidade:** Avaliação da clareza e fluidez da jornada do usuário.
 * **Testes de Segurança:** Análise de vulnerabilidades nos campos de entrada e no processo de autenticação.
