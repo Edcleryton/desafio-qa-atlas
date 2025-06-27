@@ -1,4 +1,3 @@
-# language: pt
 Funcionalidade: Registro de Novo Usuário no Gmail
   Para que um novo colaborador possa receber documentos importantes, como seu contrato de trabalho
   Como uma pessoa sem uma conta Google
