@@ -9,11 +9,11 @@ Para o **1º Caso**, são apresentadas duas abordagens para o cenário de teste,
 ## Estrutura do Repositório
 
 * `features/`
-    * `criacao_conta_gmail.feature`: Cenário de teste em Gherkin, otimizado para automação (melhor prática de BDD).
+  * `criacao_conta_gmail.feature`: Cenário de teste em Gherkin, otimizado para automação (melhor prática de BDD).
 * `docs/`
-    * `guia_processo_onboarding.md`: Versão detalhada do cenário, formatada como um guia para o usuário.
-    * `relatorios_de_bug/`
-        * `GML-REG-023.md`: Relatório de bug detalhado sobre a falha na validação do token.
+  * `guia_processo_onboarding.md`: Versão detalhada do cenário, formatada como um guia para o usuário.
+  * `relatorios_de_bug/`
+    * `GML-REG-001.md`: Relatório de bug detalhado sobre a falha na validação do token.
 * `README.md`: Este arquivo, com a visão geral do projeto.
 
 ---
@@ -24,13 +24,13 @@ Para o **1º Caso**, são apresentadas duas abordagens para o cenário de teste,
 
 A solução para este caso foi dividida em dois artefatos para demonstrar a flexibilidade da análise de QA:
 
-1.  **Cenário Abstrato (Melhor Prática para Automação):** Localizado em [`/features/criacao_conta_gmail.feature`](./features/criacao_conta_gmail.feature), este cenário segue o estilo declarativo, focando no comportamento e garantindo robustez e manutenibilidade. É a versão ideal para uma suíte de testes automatizados.
+1. **Cenário Abstrato (Melhor Prática para Automação):** Localizado em [`/features/criacao_conta_gmail.feature`](./features/criacao_conta_gmail.feature), este cenário segue o estilo declarativo, focando no comportamento e garantindo robustez e manutenibilidade. É a versão ideal para uma suíte de testes automatizados.
 
-2.  **Cenário Detalhado (Guia de Processo):** Disponível em [`/docs/guia_processo_onboarding.md`](./docs/guia_processo_onboarding.md), esta versão serve como um guia passo a passo para um usuário sem conhecimento prévio do fluxo, como o colaborador José.
+2. **Cenário Detalhado (Guia de Processo):** Disponível em [`/docs/guia_processo_onboarding.md`](./docs/guia_processo_onboarding.md), esta versão serve como um guia passo a passo para um usuário sem conhecimento prévio do fluxo, como o colaborador José.
 
 ### Caso 2: Relatório de Bug (Falha na Validação de Token)
 
-O relatório de bug formal, detalhando a falha na validação do token, pode ser encontrado em [`/docs/relatorios_de_bug/GML-REG-023.md`](./docs/relatorios_de_bug/GML-REG-023.md).
+O relatório de bug formal, detalhando a falha na validação do token, pode ser encontrado em [`/docs/relatorios_de_bug/GML-REG-001.md`](./docs/relatorios_de_bug/GML-REG-001.md).
 
 O relatório foi estruturado seguindo padrões da indústria (baseados em IEEE 829) para garantir que o time de desenvolvimento tenha todas as informações necessárias para replicar e corrigir o defeito eficientemente.
 
@@ -45,19 +45,19 @@ Para ir além do solicitado e demonstrar uma visão de qualidade mais abrangente
 Para garantir uma cobertura de teste mais abrangente da funcionalidade de registro, o "caminho feliz" seria complementado pelos seguintes casos de teste, que cobrem fluxos alternativos e cenários de falha:
 
 * **Cenário: Tentativa de registro com nome de usuário já existente**
-    * **Objetivo:** Validar se o sistema exibe uma mensagem de erro apropriada e sugere alternativas quando o `Nome de usuário` escolhido já está em uso.
+  * **Objetivo:** Validar se o sistema exibe uma mensagem de erro apropriada e sugere alternativas quando o `Nome de usuário` escolhido já está em uso.
 
 * **Cenário: Senhas não correspondentes no formulário**
-    * **Objetivo:** Garantir que o formulário impede o avanço e informa o usuário de forma clara se os campos "Senha" e "Confirmar" não forem idênticos.
+  * **Objetivo:** Garantir que o formulário impede o avanço e informa o usuário de forma clara se os campos "Senha" e "Confirmar" não forem idênticos.
 
 * **Cenário: Senha fora do padrão de segurança exigido**
-    * **Objetivo:** Verificar se o sistema valida os requisitos de complexidade da senha (mínimo de caracteres, combinação de letras, números e símbolos) e orienta o usuário sobre como criar uma senha forte.
+  * **Objetivo:** Verificar se o sistema valida os requisitos de complexidade da senha (mínimo de caracteres, combinação de letras, números e símbolos) e orienta o usuário sobre como criar uma senha forte.
 
 * **Cenário: Validação de campos obrigatórios**
-    * **Objetivo:** Assegurar que o sistema não permite o avanço caso campos essenciais, como "Nome" ou "Sobrenome", não sejam preenchidos.
+  * **Objetivo:** Assegurar que o sistema não permite o avanço caso campos essenciais, como "Nome" ou "Sobrenome", não sejam preenchidos.
 
 * **Cenário: Fluxo alternativo sem verificação por telefone**
-    * **Objetivo:** Explorar se a plataforma oferece um caminho alternativo para o usuário que, por algum motivo, não pode ou não deseja verificar a conta por telefone no momento do registro.
+  * **Objetivo:** Explorar se a plataforma oferece um caminho alternativo para o usuário que, por algum motivo, não pode ou não deseja verificar a conta por telefone no momento do registro.
 
 ### Estratégia de Teste para a Funcionalidade de Registro
 
